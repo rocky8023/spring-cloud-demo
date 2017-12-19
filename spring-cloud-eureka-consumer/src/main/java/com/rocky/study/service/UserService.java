@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 @FeignClient(name= "service-hello")
 public interface UserService {
 
+
     @RequestMapping(value = "/user/show")
     public String show(@RequestParam(value = "username") String username);
 }
